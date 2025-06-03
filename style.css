@@ -1,0 +1,574 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #e9f0f8;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    color: #007bff;
+}
+
+header nav {
+    text-align: center;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#home .container {
+    text-align: center;
+    padding: 120px 0;
+}
+
+#home h2 {
+    font-size: 3.5em;
+    color: #007bff;
+    margin-bottom: 25px;
+}
+
+#home p:first-of-type {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#home p:nth-of-type(2) {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+#home a {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#home a:first-of-type {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+#home a:last-of-type {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+#home a:hover {
+    opacity: 0.9;
+}
+
+#home .scroll-down {
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+#home .scroll-down span {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+#about h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+#about .about-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#about .about-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+#about .education-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+#about .education-box h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#about .education-box div {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#about .education-box div:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+#about .education-box h4 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: #007bff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#about .education-box p {
+    text-align: left;
+    margin-bottom: 2px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+#about .education-box p:last-of-type {
+    margin-bottom: 0;
+    color: #999;
+    font-size: 0.85em;
+}
+
+#about .summary-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+#about .summary-box {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#about .summary-box h3 {
+    font-size: 2.2em;
+    color: #007bff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#about .summary-box p {
+    text-align: center;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 0.95em;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#skills p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#skills .skill-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#skills .skill-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#skills .skill-box h3 {
+    margin-top: 0;
+}
+
+#skills .skill-box span {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+#projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#projects .project-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#projects .project-card p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #555;
+    text-align: left;
+}
+
+#projects .project-card .technologies {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+#projects .project-card .technologies span {
+    display: inline-block;
+    background-color: #e9f0f8;
+    color: #007bff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin: 3px;
+    font-size: 0.85em;
+}
+
+#projects .project-card .year {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
+
+#experience h2,
+#experience .certifications h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#experience p {
+     text-align: center;
+     margin-bottom: 40px;
+     color: #555;
+}
+
+#experience .experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#experience .experience-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 800px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 40px;
+}
+
+#experience .experience-date {
+    flex-shrink: 0;
+    font-size: 0.9em;
+    color: #007bff;
+    width: 100px;
+}
+
+#experience .experience-details {
+    flex-grow: 1;
+}
+
+#experience .experience-header {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#experience .experience-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+#experience .experience-header span {
+    display: none;
+}
+
+#experience .experience-card .company {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#experience .experience-card .description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+#experience .certifications-h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#experience .certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#experience .certification-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+#experience .certification-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+#experience .certification-card p {
+    margin-bottom: 8px;
+    text-align: left;
+    color: #555;
+    font-size: 0.95em;
+}
+
+#experience .certification-card p:last-of-type {
+     font-size: 0.9em;
+     color: #666;
+     margin-bottom: 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contact .contact-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#contact .contact-info,
+#contact .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+#contact .contact-info {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+#contact .contact-info-box {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#contact .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#contact .contact-item:last-of-type {
+    margin-bottom: 0;
+}
+
+#contact .contact-item span {
+    margin-right: 15px;
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+#contact .contact-item h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+#contact .contact-item p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+#contact .contact-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#contact .contact-form div {
+    margin-bottom: 15px;
+}
+
+#contact .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+#contact .contact-form input[type="text"],
+#contact .contact-form input[type="email"],
+#contact .contact-form textarea {
+    width: calc(100% - 16px);
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact .contact-form input[type="text"]::placeholder,
+#contact .contact-form input[type="email"]::placeholder,
+#contact .contact-form textarea::placeholder {
+    color: #999;
+}
+
+#contact .contact-form textarea {
+    resize: vertical;
+}
+
+#contact .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact .contact-form button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Add more styles based on images later */ 

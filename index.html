@@ -1,297 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nancy Patel - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-        <div class="container">
-            <h1>Nancy Patel</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <title>Nancy Patel - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="home">
-        <div class="container">
-            <p>
-                👋 Hi, I'm
-            </p>
-            <h2>
-                Nancy Patel
-            </h2>
-            <p>
-                A motivated and enthusiastic 2nd-year B.Tech IT student specializing in full-stack development, with a strong passion for problem-solving. Eager to apply my skills in innovative projects and further enhance my expertise in the fields of AI and ML.
-            </p>
-            <a href="#contact">Get In Touch</a>
-            <a href="#projects">View Work</a>
-        </div>
-        <div class="scroll-down">
-            <p>Scroll Down</p>
-            <span>&darr;</span> <!-- Downward arrow character -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Nancy Patel</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full Stack Developer & Tech Enthusiast</h2>
+                    <p class="hero-description">
+                        A motivated 2nd-year B.Tech IT student specializing in full-stack development, 
+                        with a strong passion for problem-solving and creating innovative solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Nancy-patel018" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:nanpdu800@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:8780909770" class="social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/NancyPatel08/" target="_blank" class="social-link">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <span class="avatar-text">NP</span>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element" style="--delay: 0s">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="floating-element" style="--delay: 1s">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-element" style="--delay: 2s">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="floating-element" style="--delay: 3s">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Get to know more about my journey and passion</p>
-
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and journey</p>
+            </div>
             <div class="about-content">
-                <div class="about-box education-box">
-                    <h3>Education</h3>
-                    <div>
-                        <h4>Bachelor of Information Technology</h4>
-                        <p>Charotar University of Science and Technology</p>
-                        <p>June 2023 – June 2027</p>
-                        <p>CGPA: 8.62</p>
-                    </div>
-                    <div>
-                        <h4>Higher Secondary Education (12th Grade)</h4>
-                        <p>Shree Gangotri School</p>
-                        <p>Jan 2022 – Jan 2023</p>
-                        <p>Percentage: 65%</p>
+                <div class="about-text">
+                    <p>
+                        I am a motivated and enthusiastic 2nd-year B.Tech IT student specializing in full-stack development, 
+                        with a strong passion for problem-solving. Eager to apply my skills in innovative projects and 
+                        further enhance my expertise in the fields of AI and ML.
+                    </p>
+                    <p>
+                        Proficient in Python and JavaScript, I thrive in transforming complex concepts into user-friendly 
+                        applications and am driven to contribute to impactful tech endeavors.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years of Study</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8.62</h3>
+                            <p>CGPA</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="summary-boxes">
-                    <div class="about-box summary-box">
-                        <h3>3+</h3>
-                        <p>Projects</p>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Information Technology</h4>
+                            <p>Charotar University of Science and Technology</p>
+                            <span class="year">2023 - Present | CGPA: 8.62</span>
+                        </div>
+                        <div class="education-item">
+                            <h4>Higher Secondary Education (12th Grade)</h4>
+                            <p>Shree Gangotri School</p>
+                            <span class="year">2022 - 2023 | Percentage: 65%</span>
+                        </div>
                     </div>
-                    <div class="about-box summary-box">
-                        <h3>3+</h3>
-                        <p>Certifications</p>
-                    </div>
-                    <div class="about-box summary-box">
-                        <h3>10+</h3>
-                        <p>Technologies</p>
+                    <div class="info-card">
+                        <h3>Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Python Tricks & Shortcuts - Udemy</li>
+                            <li>UI/UX Design Certification - OpenLearn Technology</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
-            <p>Technologies and tools I work with</p>
-
-            <div class="skill-categories">
-                <div class="skill-box">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with and tools I use</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
                     <h3>Programming Languages</h3>
-                    <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>TypeScript</span>
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>Java</span>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skill-box">
-                    <h3>Web Development</h3>
-                    <span>HTML/CSS</span>
-                    <span>JavaScript</span>
-                    <span>React.js</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>Bootstrap</span>
-                    <span>REST API</span>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skill-box">
-                    <h3>Databases</h3>
-                    <span>MongoDB</span>
-                    <span>SQL</span>
+                <div class="skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Postman</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skill-box">
-                    <h3>Tools & Others</h3>
-                    <span>Git</span>
-                    <span>VS Code</span>
-                    <span>Postman</span>
-                    <span>Agile Methodology</span>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Time Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Critical Thinking</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Projects</h2>
-            <p>Some of my recent work and achievements</p>
-
-            <div class="project-list">
-                <!-- Project 1 -->
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work and personal projects</p>
+            </div>
+            <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Vaccination Reminder Website</h3>
-                    <p>Sends SMS/email notifications for upcoming baby vaccinations. Includes doctor consultation, post-vaccine care, and travel based suggestions.</p>
-                    <div class="technologies">
-                        <span>Python</span>
-                        <span>JavaScript</span>
-                        <span>REST API</span>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-syringe"></i>
+                        </div>
                     </div>
-                    <p class="year">2024</p>
-                    <!-- Add icons for external link and GitHub if available -->
+                    <div class="project-content">
+                        <h3>Vaccination Reminder Website</h3>
+                        <p>
+                            Sends SMS/email notifications for upcoming baby vaccinations. 
+                            Includes doctor consultation, post-vaccine care, and travel-based suggestions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card">
-                    <h3>Video to PPT Converter Tool</h3>
-                    <p>Converts direct video links into summarized presentation slides. Utilizes LLM and RAG to extract relevant content from videos and generate concise, well-structured PPTs.</p>
-                    <div class="technologies">
-                        <span>Python</span>
-                        <span>LLM</span>
-                        <span>RAG</span>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
                     </div>
-                    <p class="year">2024</p>
-                    <!-- Add icons for external link and GitHub if available -->
+                    <div class="project-content">
+                        <h3>Video to PPT Converter Tool</h3>
+                        <p>
+                            Converts direct video links into summarized presentation slides. 
+                            Utilizes LLM and RAG to extract relevant content from videos and generate concise PPTs.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="project-card">
-                    <h3>Hotstar Clone</h3>
-                    <p>Built a responsive video streaming frontend similar to Disney+ Hotstar. Features modern UI/UX design and responsive layout.</p>
-                    <div class="technologies">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>React.js</span>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
                     </div>
-                    <p class="year">2024</p>
-                    <!-- Add icons for external link and GitHub if available -->
+                    <div class="project-content">
+                        <h3>Hotstar Clone</h3>
+                        <p>
+                            Built a responsive video streaming frontend similar to Disney+ Hotstar 
+                            with modern UI/UX design and interactive features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2>Work Experience</h2>
-            <p>Professional journey and internships</p>
-
-            <div class="experience-list">
-                <div class="experience-card">
-                    <div class="experience-date">Jan 2025 – Feb 2025</div>
-                    <div class="experience-details">
-                        <div class="experience-header">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey and internships</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <h3>Python Developer Intern</h3>
-                            <span>Jan 2025 – Feb 2025</span>
+                            <span class="company">TechnoHacks</span>
+                            <span class="duration">Jan 2025 - Feb 2025</span>
                         </div>
-                        <p class="company">TechnoHacks - Gujarat, India</p>
-                        <p class="description">Internship providing exposure to practical development and coding. Contributed to various projects enhancing programming skills through hands-on development. Focused on Python coding practices, debugging, and project execution.</p>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Gujarat, India
+                        </div>
+                        <p class="timeline-description">
+                            Internship providing exposure to practical development and coding. 
+                            Contributed to various projects enhancing programming skills through hands-on development.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Focused on Python coding practices, debugging, and project execution</li>
+                            <li>Contributed to various projects enhancing programming skills through hands-on development</li>
+                            <li>Gained experience in collaborative development environments</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-
-            <h2 class="certifications-h2">Certifications</h2>
-
-            <div class="certification-list">
-                <!-- Certification 1 -->
-                <div class="certification-card">
-                    <h3>Python Tricks & Shortcuts to Boost Python Programming Skill</h3>
-                    <p>Udemy</p>
-                    <p>Gained proficiency in advanced Python techniques, including Pythonic code practices, debugging, optimization, and using built-in functions and libraries effectively.</p>
-                </div>
-
-                <!-- Certification 2 -->
-                <div class="certification-card">
-                    <h3>UI/UX Design Certification</h3>
-                    <p>OpenLearn</p>
-                    <p>Understood principles of user-centered design, usability, wireframing, and prototyping.</p>
-                </div>
-
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <h3>Technology Consulting Virtual Internship</h3>
-                    <p>Accenture Forage</p>
-                    <p>Completed practical tasks including project kickoff, requirements gathering, voting application design, and creating agile stories.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Let's connect and discuss opportunities</p>
-
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities and collaborate on exciting projects</p>
+            </div>
             <div class="contact-content">
-                <!-- Contact Info -->
                 <div class="contact-info">
-                    <div class="contact-info-box">
-                        <div class="contact-item">
-                            <!-- Email Icon -->
-                            <span>📧</span>
-                            <div>
-                                <h4>Email</h4>
-                                <p>nanpdu800@gmail.com</p>
-                            </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-item">
-                            <!-- Phone Icon -->
-                            <span>📞</span>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91-8780909770</p>
-                            </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>nanpdu800@gmail.com</p>
                         </div>
-                        <div class="contact-item">
-                            <!-- GitHub Icon -->
-                            <span>🐙</span>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p>Nancy-patel018</p>
-                            </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                         <div class="contact-item">
-                            <!-- Location Icon -->
-                            <span>📍</span>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Gondal, Rajkot, Gujarat</p>
-                            </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 8780909770</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Gondal, Rajkot, Gujarat</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/Nancy-patel018</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LeetCode</h3>
+                            <p>leetcode.com/u/NancyPatel08</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Contact Form -->
                 <div class="contact-form">
-                    <form>
-                        <div>
-                            
-                            <input type="text" id="name" name="name" placeholder="Your Name">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
-                        <div>
-                            
-                            <input type="email" id="email" name="email" placeholder="Your Email">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
                         </div>
-                        <div>
-                            
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         </div>
-                        <button type="submit">Send Message</button>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p>© 2025 Nancy Patel. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Nancy Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Nancy-patel018" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:nanpdu800@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:8780909770" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/NancyPatel08/" target="_blank" class="social-link">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
